@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import DashboardCard from "../UI/Cards/DashboardCard";
 import ChartOne from "../UI/Charts/ChartOne";
