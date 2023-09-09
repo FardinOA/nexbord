@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                 ></link>
             </head>
             <body className={`${inter.className} `}>
-                <div className="dark:bg-boxdark-2 dark:text-bodydark ">
+                <main className="dark:bg-boxdark-2 dark:text-bodydark ">
                     {isDomLoaded && (
                         <div className="flex h-screen overflow-hidden">
                             {/* <!-- ===== Sidebar Start ===== --> */}
@@ -69,13 +69,13 @@ export default function RootLayout({ children }) {
                                 {["/login", "/register"].includes(
                                     `${pathName}`
                                 ) ? (
-                                    <main>
+                                    <div>
                                         <div className="h-screen w-screen flex justify-center items-center ">
                                             {children}
                                         </div>
-                                    </main>
+                                    </div>
                                 ) : (
-                                    <main>
+                                    <div>
                                         <div className="relative">
                                             <ParticlesCmp />
                                             <div className="  absolute top-0 right-0 bottom-0 left-0 mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10 !z-[1] ">
@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
                                             place="top"
                                             content="Toggle Pos menu"
                                         />
-                                    </main>
+                                    </div>
                                 )}
 
                                 {/* <!-- ===== Main Content End ===== --> */}
@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
                             {/* <!-- ===== Content Area End ===== --> */}
                         </div>
                     )}
-                </div>
+                </main>
             </body>
         </html>
     );
