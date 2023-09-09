@@ -1,3 +1,4 @@
+"use client";
 import Breadcrumb from "@/Components/Uitils/Breadcrumb";
 import React from "react";
 

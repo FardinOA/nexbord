@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 import DashboardCard from "../UI/Cards/DashboardCard";
-import ChartOne from "../UI/Charts/ChartOne";
+import dynamic from "next/dynamic";
+const ChartOne = dynamic(() => import("../UI/Charts/ChartOne"), {
+    ssr: false,
+});
 
 const Dashboard = () => {
     return (
