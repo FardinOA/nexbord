@@ -1,6 +1,7 @@
 "use client";
 import Sidebar from "@/Components/Sidebar";
 import "./globals.css";
+import "./font.css";
 import { Inter } from "next/font/google";
 import { useCallback, useEffect, useState } from "react";
 import Header from "@/Components/Header";
