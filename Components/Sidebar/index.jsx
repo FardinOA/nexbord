@@ -19,7 +19,7 @@ const Sidebar = ({
     const sidebar = useRef(null);
 
     const storedSidebarExpanded =
-        typeof localStorage != "undefined"
+        typeof window != "undefined"
             ? localStorage.getItem("sidebar-expanded")
             : null;
     const [sidebarExpanded, setSidebarExpanded] = useState(
