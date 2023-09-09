@@ -20,7 +20,8 @@ const Sidebar = ({
     const [storedSidebarExpanded, setStoredSidebarExpanded] = useState(null);
 
     useEffect(() => {
-        setStoredSidebarExpanded(localStorage.getItem("sidebar-expanded"));
+        if (typeof localStorage != "undefined")
+            setStoredSidebarExpanded(localStorage.getItem("sidebar-expanded"));
     }, []);
 
     const [sidebarExpanded, setSidebarExpanded] = useState(
